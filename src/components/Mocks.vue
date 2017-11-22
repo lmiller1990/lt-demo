@@ -1,11 +1,10 @@
 <template>
   <div>
-    <h1>4. mocks: {} (モック)</h1>
     <div :style="getColor">
       Welcome, {{ $route.params.username }}
     </div>
     <div>
-      色: <input type="text" @input="updateColor">
+      色: <input type="text" placeholder="色を入力" @input="updateColor">
     </div>
   </div>
 </template>

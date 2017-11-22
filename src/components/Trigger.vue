@@ -17,15 +17,15 @@
 
     methods: {
       setLanguage () {
-        this.locale === '英語' 
-        ? this.locale = '日本語'
-        : this.locale = '英語'
+        this.language === '英語' 
+        ? this.language = '日本語'
+        : this.language = '英語'
       }
     },
 
     computed: {
       greeting () {
-        return this.locale === '英語' 
+        return this.language === '英語' 
           ? 'Hello' 
           : 'こんにちは'
       }
