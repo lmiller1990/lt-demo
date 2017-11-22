@@ -2,11 +2,13 @@ import { shallow } from 'vue-test-utils'
 import setComputed from './setComputed'
 
 test('setComputed', () => {
-  const wrapper = shallow(setComputed)
+  const component = shallow(setComputed)
 
-  console.log(wrapper.html())
+  // console.log(component.html())
 
-  wrapper.setComputed({ greeting: 'こんにちは' })
+  component.setComputed({ greeting: 'おはよう' })
 
-  console.log(wrapper.html())
+  // console.log(component.html())
+
+  expect(component.text()).toBe('おはよう')
 })

@@ -1,27 +1,22 @@
 <template>
   <div>
-    <h1>2. setComputed()</h1>
-    <div class="greet">
-      {{ greeting }}
-    </div>
+    {{ greeting }}
   </div>
 </template>
 
 <script>
   export default {
-    name: 'setData',
-
     data () {
       return {
-        locale: 'ja'
+        language: 'ja'
       }
     },
 
     computed: {
       greeting () {
-        return this.locale === 'en' 
-          ? 'Hi!' 
-          : 'おはよう'
+        return this.language === '日本語' 
+          ? 'おはよう'
+          : 'Good morning'
       }
     }
   }

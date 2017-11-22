@@ -7,7 +7,7 @@ describe('SetData', () => {
 
     component.setData({ language: '日本語' })
 
-    console.log(component.html())
+    // console.log(component.html())
 
     expect(component.text()).toEqual('Language: 日本語')
   })
