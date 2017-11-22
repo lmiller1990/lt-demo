@@ -1,4 +1,7 @@
-Vue js meetの台本です。
+Vue js meetの台本です。Demo: https://lmiller1990.github.io/lt-demo/#/ 
+
+Run with `yarn dev`
+Test with `yarn test`
 
 Hi, Today I'd like to talk about the official library for testing Vue components, vue-test-utils. 
 こんにちは。今夜は、vue-test-utilsは Vue.js向けの公式単体テストライブラリです。
