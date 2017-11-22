@@ -1,11 +1,18 @@
 <template>
   <div>
+    Language: {{ language }}
   </div>
 </template>
 
 <script>
   export default {
-    name: 'setData'
+    name: 'setData',
+
+    data () {
+      return {
+        language: '英語'
+      }
+    }
   }
 </script>
 
