@@ -1,11 +1,6 @@
 <template>
-  <div>
-    <div :style="getColor">
-      Welcome, {{ $route.params.username }}
-    </div>
-    <div>
-      色: <input type="text" placeholder="色を入力" @input="updateColor">
-    </div>
+  <div :style="getColor">
+    色: <input type="text" placeholder="色を入力" @input="updateColor">
   </div>
 </template>
 
