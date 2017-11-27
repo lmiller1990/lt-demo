@@ -14,7 +14,9 @@ test('mocks', () => {
     }
   }) 
 
-  expect(component.hasStyle('border', '15px solid red')).toBe(true)
+  expect(component.hasStyle(
+    'border', '15px solid red')
+  ).toBe(true)
 })
 
 Vue.use(Vuex)
@@ -30,9 +32,15 @@ test('ミューテーションをコミットします', () => {
     })
   }) 
 
-  component.find('input').element.value = 'yellow'
-  component.find('input').trigger('input')
+  component.find('input')
+    .element.value = 'yellow'
 
-  expect(mutations.SET_COLOR.mock.calls.length).toBe(1)
-  expect(mutations.SET_COLOR.mock.calls[0][1]).toBe('yellow')
+  component.find('input')
+    .trigger('input')
+
+  expect(mutations.SET_COLOR
+    .mock.calls.length).toBe(1)
+
+  expect(mutations.SET_COLOR
+    .mock.calls[0][1]).toBe('yellow')
 })

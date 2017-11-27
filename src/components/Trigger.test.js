@@ -5,14 +5,8 @@ test('trigger', () => {
   const component = shallow(Trigger)
 
   component.find('button').trigger('click')
-  // console.log(component.html())
+  console.log(component.html())
 
   component.find('button').trigger('click')
-  // console.log(component.html())
+  console.log(component.html())
 })
-
-  // trigger('mouseover')
-  // trigger('change')
-  // trigger('input')
-  // trigger('myCustomEvent')
-

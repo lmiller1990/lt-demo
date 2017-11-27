@@ -3,7 +3,9 @@
     <div class="greet">
       {{ greeting }}
     </div>
-    <button id="btn" @click="setLanguage">Toggle</button>
+    <button id="btn" 
+      @click="setLanguage">Toggle
+    </button>
   </div>
 </template>
 
