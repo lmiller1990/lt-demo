@@ -3,7 +3,8 @@
     <div class="greet">
       {{ greeting }}
     </div>
-    <button id="btn" 
+    <button 
+     id="btn" 
       @click="setLanguage">Toggle
     </button>
   </div>
