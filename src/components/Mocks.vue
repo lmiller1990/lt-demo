@@ -1,9 +1,7 @@
 <template>
   <div :style="getColor">
     色: 
-    <input type="text" 
-      placeholder="色を入力" 
-      @input="updateColor">
+    <input id="text-box" type="text" placeholder="色を入力" @input="updateColor">
   </div>
 </template>
 
@@ -13,16 +11,13 @@
 
     computed: {
       getColor () {
-        return { 
-          'border': '15px solid ' + 
-          this.$store.state.color }
+        return { 'border': '15px solid ' + this.$store.state.color }
       }
     },
 
     methods: {
       updateColor (event) {
-        this.$store.commit('SET_COLOR', 
-          event.target.value)
+        this.$store.commit('SET_COLOR', event.target.value)
       }
     }
   }

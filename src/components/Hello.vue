@@ -8,7 +8,7 @@
 
     data () {
       return {
-        hello: 'hello'
+        hello: 'Hello'
       }
     }
   }

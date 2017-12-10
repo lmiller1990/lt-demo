@@ -1,6 +1,7 @@
 import { shallow } from 'vue-test-utils'
 import Hello from './Hello.vue'
 
+// yarn test --runTestsByPath src/components/Hello.test.js
 describe('Hello', () => {
   it('マークアップを正しくレンダーする', () => {
     //　隔離してレンダーします
@@ -13,3 +14,4 @@ describe('Hello', () => {
     expect(component.html()).toEqual('<div>Hello</div>')
   })
 })
+
