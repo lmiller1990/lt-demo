@@ -4,10 +4,12 @@ import Vue from  'vue'
 import Vuex from 'vuex'
 
 // yarn test --runTestsByPath src/components/Mocks.test.js
+
+
 test('mocks', () => {
   // コンポーネントをモックストアを注入してレンダーします
   const component = shallow(Mocks, {
-    mocks: {
+    mocks: { //　モックオブジェクトでグローバルプロペティを注入します。
       $store: {
         state: {
           color: 'red'
@@ -48,9 +50,6 @@ test('ミューテーションをコミットします', () => {
   // テキストボックスの入力をシミュレーションします。
   component.find('#text-box').element.value = 'yellow'
   component.find('#text-box').trigger('input')
-
-  // ペイロードを簡単に確認できます。デバッグに便利です。
-  console.log(mutations.SET_COLOR.mock.calls[0])
 
   // ミューテーションをコミットしたこと検証します。
   // `trigger`を一回呼び出したので一回は正しいです。

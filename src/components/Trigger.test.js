@@ -1,6 +1,11 @@
 import { shallow } from 'vue-test-utils'
 import Trigger from './Trigger'
 
+// vue-test-utilsに`trigger`メソッドがあります。
+// イベントをシミュレーションします。
+
+
+
 // yarn test --runTestsByPath src/components/Trigger.test.js
 test('trigger', () => {
 　// レンダーします

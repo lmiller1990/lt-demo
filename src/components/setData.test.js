@@ -1,7 +1,12 @@
 import { shallow } from 'vue-test-utils'
 import setData from './setData'
 
-// yarn test --runTestsByPath src/components/setData.test.js
+/**
+ * setDataメソッドがあります。
+ * コンポーネントを簡単に設定できます。
+ * setMethods, setComputed, setPropsなどもあります。
+ */
+
 describe('SetData', () => {
   it('言語を表示します', () => {
     // レンダーします
@@ -21,7 +26,4 @@ describe('SetData', () => {
   })
 })
 
-// setMethods
-// setComputed
-// setProps
-// コンポーネントの状態を簡単に設定できます。
+// yarn test --runTestsByPath src/components/setData.test.js
