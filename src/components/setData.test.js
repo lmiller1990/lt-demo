@@ -9,16 +9,19 @@ describe('SetData', () => {
 
      //　マークアップを確認できます。デバッグに便利です。
      console.log(component.html())
-     
+
     // dataを更新します
     component.setData({ language: '日本語' })
 
     //　マークアップを確認できます。デバッグに便利です。
     console.log(component.html())
 
-    // 検証します
+    // マークアップを更新することを検証します
     expect(component.text()).toEqual('Language: 日本語')
   })
 })
 
-// yarn test --runTestsByPath src/components/setData.test.js
+// setMethods
+// setComputed
+// setProps
+// コンポーネントの状態を簡単に設定できます。

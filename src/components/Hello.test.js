@@ -7,7 +7,7 @@ describe('Hello', () => {
     //　隔離してレンダーします
     const component = shallow(Hello)
 
-    //　マークアップを確認できます
+    //　マークアップを確認できます。デバッグに便利です。
     console.log(component.html())
 
     // マークアップが正しいか検証します
