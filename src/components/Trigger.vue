@@ -3,16 +3,13 @@
     <div class="greet">
       {{ greeting }}
     </div>
-    <button 
-     id="btn" 
-      @click="setLanguage">Toggle
-    </button>
+    <button id="btn" @click="setLanguage">Toggle</button>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'trigger',
+    name: 'Trigger',
 
     data () {
       return { language: '英語' }
