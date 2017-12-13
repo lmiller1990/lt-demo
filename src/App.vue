@@ -1,24 +1,24 @@
 <template>
   <div id="app">
-    <div class="box"><setData/></div>
-    <div class="box"><SetComputed /></div>
+    <div class="box"><Hello /></div>
+    <div class="box"><setData /></div>
     <div class="box"><Trigger /></div>
     <div class="box"><Mocks /></div>
   </div>
 </template>
 
 <script>
-  import Trigger from './components/Trigger'
+import Trigger from './components/Trigger'
 import Mocks from './components/Mocks'
 import setData from './components/setData'
-import SetComputed from './components/SetComputed'
+import Hello from './components/Hello'
 
 export default {
   components: {
     Trigger,
     Mocks,
     setData,
-    SetComputed
+    Hello
   }
 }
 </script>

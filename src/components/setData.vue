@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Language: {{ language }}
-  </div>
+  <div>Language: {{ language }}</div>
 </template>
 
 <script>

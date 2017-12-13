@@ -7,14 +7,13 @@ import Hello from './Hello.vue'
  */
 describe('Hello', () => {
   it('マークアップを正しくレンダーする', () => {
-    //　隔離してレンダーします
-    const component = shallow(Hello)
+    const component = shallow(Hello) //　隔離してレンダーします
 
-    //　マークアップを確認できます。デバッグに便利です。
-    console.log(component.html())
+    //　マークアップ確認。デバッグに便利です。
+    console.log('マークアップ：', component.html()) 
 
     // マークアップが正しいか検証します
-    expect(component.html()).toEqual('<div>Hello</div>')
+    expect(component.html()).toEqual('<div>Hello World!</div>')
   })
 })
 

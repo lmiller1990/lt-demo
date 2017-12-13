@@ -19,15 +19,11 @@ test('mocks', () => {
   }) 
 
   // マークアップを確認できます
-  console.log(component.html())
+  console.log('マークアップ', component.html())
 
   // バーダーのスタイルを検証します
   expect(component.hasStyle('border', '15px solid red')).toBe(true)
 })
-
-
-
-
 
 
 
@@ -36,8 +32,10 @@ Vue.use(Vuex)
 
 test('ミューテーションをコミットします', () => {
   // ミューテーションをモックします。
+  // モックしても良いです。
+  // テストしたいのが、ミューテーションのロジックではなく、ちゃんとコミッタしたことだけです。
   let mutations = {
-    SET_COLOR: jest.fn() // Jestのモック関数
+    SET_COLOR: jest.fn() 
   }
 
   // コンポーネントにストアを注入してレンダーします。
@@ -51,6 +49,10 @@ test('ミューテーションをコミットします', () => {
   component.find('#text-box').element.value = 'yellow'
   component.find('#text-box').trigger('input')
 
+
+  console.log('呼び出した数：', mutations.SET_COLOR.mock.calls.length)
+  console.log('ペイロード', mutations.SET_COLOR.mock.calls)
+  
   // ミューテーションをコミットしたこと検証します。
   // `trigger`を一回呼び出したので一回は正しいです。
   expect(mutations.SET_COLOR.mock.calls.length).toBe(1)

@@ -9,17 +9,14 @@ import setData from './setData'
 
 describe('SetData', () => {
   it('言語を表示します', () => {
-    // レンダーします
     const component = shallow(setData)
 
-     //　マークアップを確認できます。デバッグに便利です。
-     console.log(component.html())
+    console.log('マークアップ', component.html())
 
     // dataを更新します
     component.setData({ language: '日本語' })
 
-    //　マークアップを確認できます。デバッグに便利です。
-    console.log(component.html())
+    console.log('マークアップ', component.html())
 
     // マークアップを更新することを検証します
     expect(component.text()).toEqual('Language: 日本語')
