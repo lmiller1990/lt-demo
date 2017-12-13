@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="greet">
-      {{ greeting }}
+      {{ message }}
     </div>
-    <button id="btn" @click="setLanguage">Toggle</button>
+    <button id="btn" @click="setMessage">Toggle</button>
   </div>
 </template>
 
@@ -12,24 +12,16 @@
     name: 'Trigger',
 
     data () {
-      return { language: '英語' }
+      return { message: 'Hello' }
     },
 
     methods: {
-      setLanguage () {
-        this.language === '英語' 
-        ? this.language = '日本語'
-        : this.language = '英語'
+      setMessage () {
+        this.message === 'Hello' 
+        ? this.message = 'こんにちは'
+        : this.message = 'Hello'
       }
-    },
-
-    computed: {
-      greeting () {
-        return this.language === '英語' 
-          ? 'Hello' 
-          : 'こんにちは'
-      }
-    },
+    }
   }
 </script>
 
