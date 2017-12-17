@@ -8,15 +8,13 @@
   export default {
     data () {
       return {
-        language: 'ja'
+        a: 1
       }
     },
 
     computed: {
-      greeting () {
-        return this.language === '日本語' 
-          ? 'おはよう'
-          : 'Good morning'
+      b() {
+        return this.a * 2
       }
     }
   }
