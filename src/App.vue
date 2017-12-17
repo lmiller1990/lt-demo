@@ -1,24 +1,15 @@
 <template>
   <div id="app">
-    <div class="box"><Hello /></div>
-    <div class="box"><setData /></div>
-    <div class="box"><Trigger /></div>
-    <div class="box"><Mocks /></div>
+    <div class="box"><Click /></div>
   </div>
 </template>
 
 <script>
-import Trigger from './components/Trigger'
-import Mocks from './components/Mocks'
-import setData from './components/setData'
-import Hello from './components/Hello'
+import Click from './components/Click'
 
 export default {
   components: {
-    Trigger,
-    Mocks,
-    setData,
-    Hello
+    Click
   }
 }
 </script>
