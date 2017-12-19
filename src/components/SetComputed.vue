@@ -15,6 +15,10 @@
     computed: {
       b() {
         return this.a * 2
+      },
+
+      c() {
+        return 'a'
       }
     }
   }
